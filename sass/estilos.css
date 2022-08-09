@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(62, 191, 255);
+  background-image: url("/images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 70vh;
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+}
+header .head .logo img {
+  padding: 2rem;
+}
+header .head .dropdown {
+  display: none;
+}
+header .head .triangulo {
+  display: none;
+}
+header .head .navbar {
+  list-style: none;
+  margin: 0 1rem 0 0;
+}
+header .head .navbar li {
+  padding: 1rem;
+}
+header .head .navbar li a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+header .head .navbar li:nth-child(4) {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+}
+header .head .navbar li:nth-child(4) a {
+  color: black;
+  font-family: "Fraunces", serif;
+}
+header .head .navbar li:nth-child(4):hover {
+  background-color: rgba(164, 223, 252, 0.988);
+}
+header .head .navbar li:nth-child(4):hover a {
+  color: hsl(0deg, 0%, 100%);
+}
+header .tittle {
+  font-family: "Fraunces", serif;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 900;
+  margin-top: 5rem;
+}
+header .tittle h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+}
+header .arrowD {
+  margin: 5rem;
+}
+
+.section-info .transform {
+  display: flex;
+  align-items: center;
+}
+.section-info .transform .transform-description {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  width: 20rem;
+  height: 25rem;
+  justify-content: center;
+  border: 0;
+}
+.section-info .transform .transform-description h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.section-info .transform .transform-description p {
+  font-family: "Barlow", sans-serif;
+  font-size: 12.5px;
+  padding: 0rem;
+}
+.section-info .transform .transform-description a {
+  font-family: "Fraunces", serif;
+  -webkit-text-decoration: underline hsl(51deg, 100%, 49%);
+          text-decoration: underline hsl(51deg, 100%, 49%);
+}
+.section-info .transform .transform-description a:hover {
+  -webkit-text-decoration: underline 5px hsl(51deg, 100%, 49%);
+          text-decoration: underline 5px hsl(51deg, 100%, 49%);
+}
+.section-info .transform .transform-img {
+  background-color: rgb(253, 212, 0);
+  background-image: url("/images/desktop/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 50vh;
+}
+.section-info .stand {
+  display: flex;
+  align-items: center;
+}
+.section-info .stand .stand-img {
+  background-color: rgb(255, 115, 100);
+  background-image: url("/images/desktop/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 50vh;
+}
+.section-info .stand .stand-description {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  width: 22rem;
+  height: 25rem;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+}
+.section-info .stand .stand-description h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.section-info .stand .stand-description p {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  padding: 0rem;
+  width: 22rem;
+}
+.section-info .stand .stand-description a {
+  font-family: "Fraunces", serif;
+  -webkit-text-decoration: underline hsl(7deg, 99%, 70%);
+          text-decoration: underline hsl(7deg, 99%, 70%);
+}
+.section-info .stand .stand-description a:hover {
+  -webkit-text-decoration: underline 5px hsl(7deg, 99%, 70%);
+          text-decoration: underline 5px hsl(7deg, 99%, 70%);
+}
+.section-info .other .graphic {
+  background-color: rgb(135, 202, 188);
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.section-info .other .graphic .card {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 2rem;
+}
+.section-info .other .graphic .card h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.section-info .other .graphic .card p {
+  font-family: "Barlow", sans-serif;
+  width: 21rem;
+  margin: auto;
+}
+.section-info .other .photo {
+  background-color: rgb(98, 204, 255);
+  background-image: url("/images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.section-info .other .photo .card {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 2rem;
+}
+.section-info .other .photo .card h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.section-info .other .photo .card p {
+  font-family: "Barlow", sans-serif;
+  width: 21rem;
+  margin: auto;
+}
+
+.section-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-testimonials .testimonials {
+  text-align: center;
+  margin: auto;
+  padding: 5rem;
+}
+.section-testimonials .testimonials .tittle {
+  color: hsl(213deg, 9%, 39%);
+  font-family: "Fraunces", serif;
+  margin: 2rem;
+}
+.section-testimonials .testimonials .client {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-testimonials .testimonials .box {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-testimonials .testimonials .box img {
+  border-radius: 100%;
+  width: 5rem;
+}
+
+.section-img {
+  margin: 0;
+  flex-wrap: wrap;
+  min-height: 46vh;
+}
+.section-img .img-footer:nth-child(1) {
+  width: 25%;
+  background-color: rgb(63, 179, 238);
+  background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.section-img .img-footer:nth-child(2) {
+  width: 25%;
+  background-color: rgb(248, 134, 1);
+  background-image: url("/images/desktop/image-gallery-orange.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.section-img .img-footer:nth-child(3) {
+  width: 25%;
+  background-color: rgb(71, 195, 249);
+  background-image: url("/images/desktop/image-gallery-cone.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.section-img .img-footer:nth-child(4) {
+  width: 25%;
+  background-color: rgb(253, 179, 181);
+  background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.section-footer {
+  background-color: #96d6c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.section-footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+}
+.section-footer .navbar ul {
+  list-style: none;
+  margin: 0 1rem 0 0;
+  display: flex;
+}
+.section-footer .navbar ul li {
+  padding: 0.5rem;
+}
+.section-footer .navbar ul li a {
+  color: hsl(168deg, 34%, 41%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.section-footer .navbar ul li a:hover {
+  color: hsl(0deg, 0%, 100%);
+}
+.section-footer .icons-social {
+  width: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0 0;
+}
+.section-footer .icons-social img:hover {
+  cursor: pointer;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*MENU RESPONSIVO*/
+@media (max-width: 581px) {
+  header {
+    background-image: url(/images/mobile/image-header.jpg);
+    min-height: 70vh;
+  }
+  header .head .dropdown {
+    display: flex;
+  }
+  header .head .triangulo.active {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 0;
+    height: 0;
+    border-bottom: 4rem solid hsl(0deg, 0%, 100%);
+    border-left: 4rem solid transparent;
+  }
+  header .head .navbar.oculto {
+    display: none;
+  }
+  header .head .navbar {
+    position: absolute;
+    margin: auto;
+    top: 15%;
+    left: 10%;
+    background-color: hsl(0deg, 0%, 100%);
+    width: 80%;
+    flex-direction: column;
+  }
+  header .head .navbar li a {
+    color: black;
+  }
+  header .head .navbar li:nth-child(4):hover {
+    background-color: hsl(51deg, 100%, 49%);
+  }
+  header .head .navbar li:nth-child(4):hover a {
+    color: black;
+  }
+  header .arrowD {
+    margin: 4rem;
+  }
+  .section-info .transform {
+    flex-direction: column-reverse;
+  }
+  .section-info .transform .transform-description {
+    width: 100%;
+    align-items: center;
+  }
+  .section-info .transform .transform-description h2 {
+    text-align: center;
+  }
+  .section-info .transform .transform-description p {
+    text-align: center;
+  }
+  .section-info .transform .transform-img {
+    background-image: url("/images/mobile/image-transform.jpg");
+    min-height: 47vh;
+  }
+  .section-info .stand .stand-img {
+    background-image: url("/images/mobile/image-stand-out.jpg");
+    min-height: 48vh;
+  }
+  .section-info .stand .stand-description {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .section-info .stand .stand-description p {
+    width: 90%;
+  }
+  .section-info .other .graphic {
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+    height: 34rem;
+  }
+  .section-info .other .graphic .card p {
+    width: 70%;
+  }
+  .section-info .other .photo {
+    background-image: url("/images/mobile/image-photography.jpg");
+    height: 34rem;
+  }
+  .section-info .other .photo .card p {
+    width: 70%;
+  }
+  .section-testimonials .testimonials {
+    padding: 0rem;
+    width: 100%;
+  }
+  .section-testimonials .testimonials .box {
+    width: 100%;
+  }
+  .section-img {
+    max-height: 20vh;
+  }
+  .section-img .img-footer:nth-child(1) {
+    width: 50%;
+    background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+  }
+  .section-img .img-footer:nth-child(2) {
+    width: 50%;
+    background-image: url("/images/desktop/image-gallery-orange.jpg");
+  }
+  .section-img .img-footer:nth-child(3) {
+    width: 50%;
+    background-image: url("/images/desktop/image-gallery-cone.jpg");
+  }
+  .section-img .img-footer:nth-child(4) {
+    width: 50%;
+    background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+  }
+  .section-footer {
+    padding: 3rem 0;
+  }
+  .section-footer .footer {
+    width: 95%;
+  }
+  .section-footer .footer .navbar {
+    width: 90%;
+    justify-content: center;
+  }
+  .section-footer .footer .icons-social {
+    width: 90%;
+  }
+}/*# sourceMappingURL=estilos.css.map */
